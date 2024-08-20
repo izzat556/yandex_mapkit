@@ -8,7 +8,6 @@ public class MainApplication extends Application {
   @Override
   public void onCreate() {
     super.onCreate();
-    MapKitFactory.setLocale("YOUR_LOCALE");
-    MapKitFactory.setApiKey("YOUR_API_KEY");
+    MapKitFactory.setApiKey("550e8356-8615-48a1-8fd6-6313343f372a");
   }
 }

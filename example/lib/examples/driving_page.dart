@@ -258,9 +258,12 @@ class _SessionState extends State<_SessionPage> {
       return;
     }
 
-    setState(() { results.add(result); });
+    setState(() { results.add(result);
+    print(results);});
     setState(() {
       result.routes!.asMap().forEach((i, route) {
+
+        print("${route}");
         mapObjects.add(PolylineMapObject(
           mapId: MapObjectId('route_${i}_polyline'),
           polyline: route.geometry,
